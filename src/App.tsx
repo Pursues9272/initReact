@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Button } from 'antd';
+import { Outlet, Link } from "react-router-dom";
+
 
 function App() {
   return (
@@ -8,16 +11,16 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+            <Button type="primary">
+                <Link to="/home">主页</Link>
+            </Button>
+            <Button type="primary" danger>primary</Button>
+            <Button >Default</Button>
+            <Button type="dashed" danger>
+            Dashed
+            </Button>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Outlet/>
       </header>
     </div>
   );
