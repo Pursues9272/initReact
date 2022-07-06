@@ -7,6 +7,8 @@ import reportWebVitals from './reportWebVitals';
 import {ConfigProvider} from 'antd';
 import zhCN from 'antd/lib/locale/zh_CN';
 import Home from './pages/Home';
+import Water from './pages/water/index';
+import Buju from './pages/buju/index';
 
 
 const root = ReactDOM.createRoot(
@@ -18,6 +20,8 @@ root.render(
             <Routes>
                 <Route index element={<App />}></Route>
                 <Route path="/home" element={<Home />}></Route>
+                <Route path="/water" element={<Water />}></Route>
+                <Route path="/buju" element={<Buju />}></Route>
             </Routes>
         </BrowserRouter>
     </ConfigProvider>

@@ -14,8 +14,12 @@ function App() {
             <Button type="primary">
                 <Link to="/home">主页</Link>
             </Button>
-            <Button type="primary" danger>primary</Button>
-            <Button >Default</Button>
+            <Button type="primary" danger>
+              <Link to="/water">水立方</Link>
+            </Button>
+            <Button >
+              <Link to="/buju">布局</Link>
+            </Button>
             <Button type="dashed" danger>
             Dashed
             </Button>
