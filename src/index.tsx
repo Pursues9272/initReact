@@ -7,8 +7,12 @@ import reportWebVitals from './reportWebVitals';
 import {ConfigProvider} from 'antd';
 import zhCN from 'antd/lib/locale/zh_CN';
 import Home from './pages/Home';
-import Water from './pages/water/index';
+// import Water from './pages/water/index';
 import Buju from './pages/buju/index';
+import ZhujianA from './pages/rx/zhujianA';
+import {Provider} from 'react-redux';
+import store from './redux/stores/index'
+// import configsta from '../src/redux/stores/configureStore'
 
 
 const root = ReactDOM.createRoot(
@@ -16,14 +20,17 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <ConfigProvider locale={zhCN}>
+      <Provider store={store}>
         <BrowserRouter>
             <Routes>
                 <Route index element={<App />}></Route>
                 <Route path="/home" element={<Home />}></Route>
-                <Route path="/water" element={<Water />}></Route>
+                {/* <Route path="/water" element={<Water />}></Route> */}
                 <Route path="/buju" element={<Buju />}></Route>
+                <Route path="/xaa" element={<ZhujianA />}></Route>
             </Routes>
         </BrowserRouter>
+        </Provider>
     </ConfigProvider>
 );
 

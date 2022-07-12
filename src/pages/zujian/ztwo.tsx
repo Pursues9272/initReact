@@ -2,6 +2,8 @@ import { Component } from 'react';
 import { UploadOutlined } from '@ant-design/icons';
 import { Button, Popconfirm, Space, Upload } from 'antd';
 import {Provider} from 'react-redux';
+import {applyMiddleware, compose, createStore} from 'redux'
+import thunk from "redux-thunk";
 
 
 interface oneSta {
@@ -53,6 +55,9 @@ export default class zujianOne extends Component<initoneSta, oneSta> {
     }
     // 挂载生命周期之4，挂载后 插入 DOM 树中）立即调用
     componentDidMount() {
-
+        console.log(applyMiddleware)
+        console.log(compose)
+        console.log(createStore)
+        console.log(thunk)
     }
 }

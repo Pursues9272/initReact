@@ -21,7 +21,7 @@ function App() {
               <Link to="/buju">布局</Link>
             </Button>
             <Button type="dashed" danger>
-            Dashed
+              <Link to="/xaa">redux</Link>
             </Button>
         </p>
         <Outlet/>
