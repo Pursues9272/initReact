@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { Button } from 'antd';
 import {connect} from 'react-redux'
+import store from '../../redux/stores';
 
 interface iiiasdC {
     minini: number
@@ -23,11 +24,13 @@ class zhujianC extends Component<any,iiiasdC>{
     }
     componentDidMount(){
         console.log(this.props)
+        console.log(store.getState())
     }
 }
 
 const sonBsad = (state:any) =>{
-    console.log('zhujianC',state)
+        console.log(store.getState())
+        console.log('zhujianC',state)
     return state
 }
 export default connect(sonBsad,null)(zhujianC) 

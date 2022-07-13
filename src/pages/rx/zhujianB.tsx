@@ -17,6 +17,7 @@ class zhujianB extends Component<any,iiiasdB>{
         console.log('zhujianB', this.props)
         // 发送action
         this.props.sendBbing()
+        console.log('zhujianB', this.props)
     }
     render(){
         return(

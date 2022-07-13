@@ -27,12 +27,12 @@ export default class zujianOne extends Component<initoneSta, oneSta> {
         }
     }
     fbb = () => {
-        console.log(this.props.dieceibo)
-        console.log(this.props.dizifuc)
+        // console.log(this.props.dieceibo)
+        // console.log(this.props.dizifuc)
     }
     render() {
         const { chuangezizujian } = this.props
-        console.log(Provider)
+        // console.log(Provider)
         return (
             <>
                 <Space>
@@ -55,9 +55,9 @@ export default class zujianOne extends Component<initoneSta, oneSta> {
     }
     // 挂载生命周期之4，挂载后 插入 DOM 树中）立即调用
     componentDidMount() {
-        console.log(applyMiddleware)
-        console.log(compose)
-        console.log(createStore)
-        console.log(thunk)
+        // console.log(applyMiddleware)
+        // console.log(compose)
+        // console.log(createStore)
+        // console.log(thunk)
     }
 }

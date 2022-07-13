@@ -4,8 +4,10 @@ import { SearchOutlined } from '@ant-design/icons';
 import { Link } from "react-router-dom";
 import ZujianOne from '../zujian/zujianone';
 import Ztwo from '../zujian/ztwo'
+import {connect} from 'react-redux'
 
 import './index.scss';
+import { stat } from 'fs';
 // 导入组件/依赖
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -16,11 +18,11 @@ interface waterState {
     wenz: string
 }
 
-export default class Water extends Component<any, waterState>{
+class Water extends Component<any, waterState>{
     constructor(props: any) {
         super(props)
         this.state = {
-            suipian: 10,
+            suipian: 0,
             kaiguan: true,
             wenz: '我是一个爱动脑筋的小孩'
         }
@@ -43,7 +45,7 @@ export default class Water extends Component<any, waterState>{
         let faa = null;
         if (this.state.kaiguan) {
             faa = <Button type="primary">
-                熊大
+                熊大{this.props.count}
             </Button>
         } else {
             faa = <Button type="primary" danger>
@@ -94,3 +96,9 @@ export default class Water extends Component<any, waterState>{
         )
     }
 } 
+
+const sonWsad = (state: any) => {
+    console.log("Water", state)
+    return state
+}
+export default connect(sonWsad,null)(Water) 
