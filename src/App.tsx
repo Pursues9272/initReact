@@ -23,6 +23,9 @@ function App() {
             <Button type="dashed" danger>
               <Link to="/xaa">redux</Link>
             </Button>
+            <Button type="dashed" danger>
+              <Link to="/oneds">页面模拟</Link>
+            </Button>
         </p>
         <Outlet/>
       </header>

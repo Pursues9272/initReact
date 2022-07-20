@@ -13,6 +13,7 @@ import ZhujianA from './pages/rx/zhujianA';
 import {Provider} from 'react-redux';
 import store from './redux/stores/index'
 // import configsta from '../src/redux/stores/configureStore'
+import AiMone from './pages/ymmn/AiMone';
 
 
 const root = ReactDOM.createRoot(
@@ -28,6 +29,7 @@ root.render(
                 {/* <Route path="/water" element={<Water />}></Route> */}
                 <Route path="/buju" element={<Buju />}></Route>
                 <Route path="/xaa" element={<ZhujianA />}></Route>
+                <Route path="/oneds" element={<AiMone />}></Route>
             </Routes>
         </BrowserRouter>
         </Provider>

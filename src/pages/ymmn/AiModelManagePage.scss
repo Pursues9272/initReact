@@ -1,0 +1,38 @@
+.ai-model-manage-page{
+  padding: 20px 30px;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .functions-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+
+    .buttons-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .refresh-icon{
+        font-size: 24px;
+        cursor: pointer;
+        color: #666;
+        margin: 0 24px;
+      }
+    }
+
+    .search-input {
+      width: 300px;
+    }
+  }
+
+
+  .tab-class{
+    font-size: 1.2em;
+  }
+}
